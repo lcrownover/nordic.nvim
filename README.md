@@ -107,9 +107,26 @@ require 'nordic' .setup {
   bold = true,
   -- Enable italicized comments
   italic = true,
+  -- Enable editor background transparency
+  transparent = false,
   -- These can contain anything that neovim understands.
   -- (fg, bg, italic, bold, etc.)
   override = {},
+}
+```
+
+An example of overriding the Telescope Prompt Title colors:
+
+```lua
+local palette = require 'nordic.colors'.palette
+require 'nordic'.setup {
+  override = {
+    TelescopePromptTitle = {
+      fg = palette.red.bright,
+      bg = palette.green.base,
+      italic = true,
+    },
+  }
 }
 ```
 

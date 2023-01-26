@@ -9,6 +9,8 @@ local defaults = {
   bold = true,
   -- Enable italicized comments
   italic = true,
+  -- Enable general editor background transparency
+  transparent = false,
   -- Override styling of any highlight group
   override = {},
 }
